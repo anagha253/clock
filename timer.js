@@ -10,6 +10,11 @@ const disp=document.getElementById("t1");
 var interval=null;
 var total=0;
 
+function ringalrm(){
+    var al= new Audio("http://www.ufoseries.com/soundEffects/hqAlarmBell.mp3");
+    al.play();
+}
+
 totalVal= ()=>{
     total=Number(hour.value)*3600+ Number(min.value)*60+Number(sec.val);
 }
@@ -28,6 +33,8 @@ Timer=()=>{
         sec.value=s
     }
     else{
+        //ringalrm();
+        console.log("time over!");
         t1.innerText='Time Over!';
     }
 }
@@ -41,6 +48,7 @@ sets.addEventListener("click",()=>{
     clearInterval(interval);
     interval=setInterval(Timer,1000);
     t1.innerText="Timer started";
+    console.log("Timer start...");
  
 });
 

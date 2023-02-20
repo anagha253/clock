@@ -41,15 +41,20 @@ resetbtn.addEventListener("click",() => {
 function updatetime(){
     elaspedtime=Date.now()-starttime;
 
-    sec=Math.floor((elaspedtime/1000)%60);
-    min=Math.floor((elaspedtime/1000 *60)%60);
+   
     hr=Math.floor((elaspedtime/1000 *60 *60)%60);
+    min=Math.floor((elaspedtime/1000 *60)%60);
+    sec=Math.floor((elaspedtime/1000)%60);
+
 
     sec=pad(sec);
     min=pad(min);
     hr=pad(hr);
 
-    displ.textContent = `${hr}:${min}:${sec}`;
+    document.getElementById("hours").innerHTML=hr;
+    document.getElementById("mins").innerHTML=min;
+    document.getElementById("secs").innerHTML=sec;
+
 
     function pad(unit)
     {

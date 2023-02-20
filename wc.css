@@ -1,0 +1,22 @@
+*{
+    size: 50px;
+    background-color:blanchedalmond;
+    color: rgb(21, 21, 21);
+}
+
+body{
+   
+    font-style: bold;
+}
+
+.sep{
+    color: black;
+    height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#times{
+    font-size: 30px;
+   padding-left: 20%;
+}
