@@ -1,0 +1,63 @@
+h1{
+    color: rgb(21, 21, 21);
+}
+body{
+    color: rgb(10, 9, 9);
+    text-align: center;
+}
+*{
+    background-color:blanchedalmond;
+}
+button{
+    background-color: rgb(231, 150, 44);
+    color: black;
+}
+.sep{
+    color: black;
+    height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.choices{
+    margin: 100px;
+}
+
+.set{
+    color: black;
+    font-style: bold;
+    font-size: 30px;
+}
+
+
+
+#t1{
+    font-size: 25px;
+    font: weight 8px ;
+}
+
+form{
+    height: 25px;
+    padding: 30px;
+    border-radius: 5%;
+    margin: 5px;
+    align-content: center;
+}
+
+
+
+
+
+#hr,#min,#sec{
+    width: 80px;
+    padding: 0.5%;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.watch{
+    font-size: 50px;
+    font-style: bold;
+    padding: 0.5%;
+
+}
